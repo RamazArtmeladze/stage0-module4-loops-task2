@@ -11,7 +11,7 @@ public class WordsBuilder {
         }
 
         String phrase = phraseBuilder.toString();
-        System.out.println(phrase);
+        System.out.print(phrase);
     }
 }
 
