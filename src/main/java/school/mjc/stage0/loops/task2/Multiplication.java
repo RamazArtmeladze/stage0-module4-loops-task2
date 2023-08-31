@@ -2,18 +2,31 @@ package school.mjc.stage0.loops.task2;
 
 public class Multiplication {
     public void printMultiplied(int multiplyByAndToInclusive) {
-        if (multiplyByAndToInclusive == 0) {
-            System.out.println(" ");
-            return;
-        }
+        int x = 0;
 
-        int currentNumber = 0;
-
-        while (currentNumber <= multiplyByAndToInclusive) {
-            int multipliedResult = currentNumber * multiplyByAndToInclusive;
-            System.out.println(multipliedResult);
-            currentNumber++;
+        if (multiplyByAndToInclusive > 0 ) {
+            while (multiplyByAndToInclusive > x) {
+                int result = x * multiplyByAndToInclusive;
+                System.out.println(result);
+                x ++;
+            }
         }
+        if (multiplyByAndToInclusive < 0 ) {
+            while (multiplyByAndToInclusive <= x) {
+                int result = x * multiplyByAndToInclusive * -1;
+                System.out.println( result);
+                x--;
+            }
+        }
+        if (multiplyByAndToInclusive ==0 ) {
+            System.out.println("");
+            }
+    }
+    public static void main(String[] args) {
+        Multiplication multiplication = new Multiplication();
+        multiplication.printMultiplied(0);
     }
 }
+
+
 
