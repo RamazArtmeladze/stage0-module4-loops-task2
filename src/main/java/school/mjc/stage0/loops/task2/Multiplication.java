@@ -5,7 +5,7 @@ public class Multiplication {
         int x = 0;
 
         if (multiplyByAndToInclusive > 0 ) {
-            while (multiplyByAndToInclusive > x) {
+            while (multiplyByAndToInclusive >= x) {
                 int result = x * multiplyByAndToInclusive;
                 System.out.println(result);
                 x ++;
@@ -18,9 +18,6 @@ public class Multiplication {
                 x--;
             }
         }
-        if (multiplyByAndToInclusive ==0 ) {
-            System.out.println("");
-            }
     }
     public static void main(String[] args) {
         Multiplication multiplication = new Multiplication();
